@@ -7,19 +7,15 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
     function openTab(evt, cityName) {
-        // Declare all variables
         var i, tabcontent, tablinks;
-        // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
-        // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        // Show the current tab, and add an "active" class to the link that opened the tab
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
@@ -42,9 +38,9 @@
     <div class = "clear"></div>
     
     <div class="tab">
-      <div class="tab_but" id="defaultOpen"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'List of drugs')">List of drugs</a></div>
+      <div class="tab_but"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'List of drugs')">List of drugs</a></div>
       <div class="tab_but"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</a></div>
-      <div class="tab_but"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Other')">Other</a></div>
+      <div class="tab_but"><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Idea')">Other</a></div>
     </div>
     
     <div id="List of drugs" class="tabcontent">
@@ -313,9 +309,17 @@
       </div>
     </div>
 
-    <div id="Other" class="tabcontent">
-      <h3>Other</h3>
-      <p>Other 1.</p>
+    <div id="Idea" class="tabcontent">
+      <h3>Main ideas</h3>
+      <ul>
+        <li class="big_li">Providing the best customer service</li>
+        <li class="big_li">Easy to Understand the schedule of when to use tablets</li>
+        <li class="big_li">Identify the incompatibility between tablets</li>
+        <li class="big_li">Print a schedule for a client</li>
+        <li class="big_li">Send information to emergency contact (daughter, custodian ...)</li>
+        <li class="big_li"></li>
+        <li class="big_li">Automatic calculation of number of days for a course of treatment</li>
+      </ul>
     </div>
 
 </div>

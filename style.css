@@ -179,6 +179,10 @@ body {
 	padding-top: 8px;
 }
 
+li.big_li {
+	font-size: xx-large;
+}
+
 /* Style the list */
 div.tab {
     list-style-type: none;
