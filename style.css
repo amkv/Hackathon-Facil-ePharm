@@ -1,0 +1,215 @@
+
+body {
+	background: #d5d5ff;
+	height: 100%;
+}
+
+.container {
+	min-height:100%;
+	height:100%;
+	position:relative;
+}
+
+.dheader {
+	background: #696969;
+    padding: 3%;
+}
+
+.header_name {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    float: left;
+}
+
+.header_name2 {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    float: right;
+}
+
+.dbody {
+	background: #f3f3f3;
+    padding: 3%;
+    padding-bottom:60px;
+    height: 80%;
+}
+
+.dfooter {
+	position:absolute;
+	bottom:0;
+	margin: 0 auto;
+	width:100%;
+	height:3%;   /* Height of the footer */
+	background: #bdbdbd;
+	padding: 1%;
+}
+
+.tabs {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.drugs {
+	padding: 10px;
+    background: #e2e2e2;
+    margin-bottom: 5px;
+
+}
+
+.name_drug {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.comments_doctor
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.eat_times {
+	display: inline-block;
+    margin-right: 20px;
+    background: #afcaff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.set_time {
+	display: inline-block;
+    margin-right: 20px;
+    background: #afcaff;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.exit {
+    padding: 10px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+ .tab_but {
+	padding: 10px;
+    float: left;
+    border: 1px solid black;
+    margin-right: 2px;
+    border-radius: 10px;
+ }
+
+.order {
+    float: left;
+    font-size: x-large;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background: #696969;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.cubes_wrapper {
+
+}
+
+.cubes {
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.send_to_emergency {
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    float: left;
+    height: 35px;
+}
+
+.one_day {
+
+}
+
+.print {
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.shedule_footer {
+	display: inline;
+}
+
+.pharma_comment {
+	padding: 10px;
+}
+
+.day_name {
+	font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.list_header {
+	padding: 5px;
+    border: 1px solid dimgrey;
+    margin-bottom: 10px;
+}
+
+.list_header_name {
+	padding-top: 8px;
+}
+
+/* Style the list */
+div.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
