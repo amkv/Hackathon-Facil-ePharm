@@ -8,3 +8,21 @@ $(document).ready(function(){
         $('.log-status').removeClass('wrong-entry');
     });
 });
+
+//------------------------------------------------------
+
+/*var image = document.getElementById("testImg");
+var button = document.getElementById("testBtn");
+
+if (image.classList && image && button){
+    button.onclick = function(){
+        if (this.value == 'pause'){
+            image.classList.add('stop');
+            this.value = 'play';
+        }
+        else{
+            image.classList.remove('stop');
+            this.value = 'pause';
+        }
+    }
+}*/
