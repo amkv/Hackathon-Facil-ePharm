@@ -33,7 +33,7 @@ body {
 	background: #f3f3f3;
     padding: 3%;
     padding-bottom:60px;
-    height: 80%;
+    height: 100%;
 }
 
 .dfooter {
@@ -130,6 +130,15 @@ body {
     margin-top: -1px;
 }
 
+.cubes_select {
+	padding: 10px;
+    border: 1px solid black;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: #a9a9c3;
+}
+
 .send_to_emergency {
     padding: 10px;
     border: 1px solid black;
@@ -170,9 +179,9 @@ body {
 }
 
 .list_header {
-	padding: 5px;
-    border: 1px solid dimgrey;
-    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 5px;
 }
 
 .list_header_name {
