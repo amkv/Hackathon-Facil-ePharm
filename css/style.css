@@ -36,19 +36,18 @@ i.love{
 	font-family: 'Berkshire Swash', cursive;
 	font-size:55px;
 	color: #333333;
-	position:fixed;
+	position:center;
 	top:80px;
-	margin-left:690px;
 	text-align:center;
+	margin-bottom:10px;
 }
 /*---------------------------header1--------------------*/
 .header2 p{
 	font-family: Trebuchet MS
 	font-size: 50px;
 	color: #333333;
-	position:fixed;
+	position:center;
 	top:200px;
-	margin-left:760px;
 	text-align:center;
 }
 /*-----------------------------header2-------------------*/
@@ -57,8 +56,8 @@ body {
 }
 
 .container{
-	min-width:1700px;
-	max-width:1700px;
+	/*min-width:1700px;
+	max-width:1700px;*/
 	margin: 20px, auto, 20px, auto;
 	height: 500px;
 	/*border: 1px solid #890908;
@@ -81,18 +80,19 @@ h1 {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+	position: absolute;
 	margin: auto;
-	/*position: absolute;*/
-	left: 0;
-	right: 0;
-	top: 50%;
+	left: 10%;
+	right: 90%;
+	top: 10%;
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(70%);
-	float: left;
+	/*float: left;*/
 	/*margin-top: 300px;*/
-	margin-left: 200px;
+	display:inline-block;
+	/*margin-left: 200px;*/
 }
 
 .login-form2 {
@@ -106,16 +106,17 @@ h1 {
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 	margin: auto;
-	/*position: absolute;*/
-	left: 0;
-	right: 0;
-	top: 50%;
+	position: absolute;
+	left: 40%;
+	right: 60%;
+	top: 10%;
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(70%);
-	float:left;
-	margin-left: 120px;
+	/*float:left;*/
+	display:inline-block;
+	/*margin-left: 200px;*/
 }
 
 .login-form3 {
@@ -129,16 +130,17 @@ h1 {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     margin: auto;
- 	/*position: absolute;*/
-    left: 0;
-    right: 0;
-    top: 50%;
+ 	position: absolute;
+    left: 70%;
+    right: 30%;
+    top: 10%;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(70%);
-	float:right;
- 	margin-right: 200px;
+	/*float:left;*/
+	display:inline-block;
+ 	/*margin-left: 200px;*/
 }
 
 .form-group {
