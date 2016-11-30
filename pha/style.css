@@ -340,3 +340,12 @@ ul.tab li a:focus, .active {background-color: #ccc;}
     display: none;
     padding: 6px 12px;
 }
+
+/*position the logo in the right place.*/
+img.logo
+{
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
