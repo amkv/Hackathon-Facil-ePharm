@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Vibur);
+/*@import url(http://fonts.googleapis.com/css?family=Vibur);*/
+@import url("font1.css");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+/*@import url("font2.css")*/
 * {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -29,6 +32,26 @@ i.love{
 	}
 }
 /*----------------------------end of testing-------------*/
+.header1 p{
+	font-family: 'Berkshire Swash', cursive;
+	font-size:55px;
+	color: #333333;
+	position:fixed;
+	top:80px;
+	margin-left:690px;
+	text-align:center;
+}
+/*---------------------------header1--------------------*/
+.header2 p{
+	font-family: Trebuchet MS
+	font-size: 50px;
+	color: #333333;
+	position:fixed;
+	top:200px;
+	margin-left:760px;
+	text-align:center;
+}
+/*-----------------------------header2-------------------*/
 body {
 	background: #AED581/*#FF9000*/;
 }
@@ -66,7 +89,7 @@ h1 {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
-	transform: translateY(50%);
+	transform: translateY(70%);
 	float: left;
 	/*margin-top: 300px;*/
 	margin-left: 200px;
@@ -90,7 +113,7 @@ h1 {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
-	transform: translateY(50%);
+	transform: translateY(70%);
 	float:left;
 	margin-left: 120px;
 }
@@ -113,7 +136,7 @@ h1 {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(50%);
+    transform: translateY(70%);
 	float:right;
  	margin-right: 200px;
 }
@@ -233,7 +256,7 @@ form.logo img{
 	height: 50px;
 	position:absolute;
 	top:20px;
-	right:0;
+	right:20px;
 }
 /*---------------------footer-------------------------*/
 footer{
