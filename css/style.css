@@ -96,9 +96,9 @@ h1 {
 }
 
 .login-form2 {
-	background-image: url("../img/pharmacist.gif");
-	background-size: 120% 120%;
-	background-position: -10% 15%;
+	background-image: url("../img/pharmacist.jpg");
+	background-size: 135%;
+	background-position: 65% 105%;
 	width: 350px;
 	padding: 40px 30px;
 	/*background: #eee;*/
