@@ -1,6 +1,6 @@
 
 body {
-	background: #d5d5ff;
+	background: #615959;
 	height: 100%;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .drugs {
 	padding: 10px;
-    background: #e2e2e2;
+    background: #e6e5e5;
     margin-bottom: 5px;
 
 }
@@ -72,19 +72,24 @@ body {
 }
 
 .eat_times {
-	display: inline-block;
+    display: inline-block;
     margin-right: 20px;
-    background: #afcaff;
+    background: #d8d8d8;
     padding: 3px;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .set_time {
 	display: inline-block;
     margin-right: 20px;
-    background: #afcaff;
+    background: rgba(105, 105, 105, 0.2);
     padding: 3px;
     border-radius: 10px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .exit {
@@ -116,6 +121,14 @@ body {
     background: #696969;
     color: white;
     margin-bottom: 5px;
+}
+
+.choose_day {
+	float: left;
+    padding: 10px;
+    margin-right: -1px;
+    border: 1px solid #615959;
+    margin-bottom: 20px;
 }
 
 .cubes_wrapper {

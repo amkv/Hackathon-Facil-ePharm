@@ -98,6 +98,16 @@
 
     <div id="Schedule" class="tabcontent">
       <h3>Schedule</h3>
+      <div>
+        <div class="choose_day">Monday</div>
+        <div class="choose_day">Tuesday</div>
+        <div class="choose_day">Wednesday</div>
+        <div class="choose_day">Thursday</div>
+        <div class="choose_day">Friday</div>
+        <div class="choose_day">Saturday</div>
+        <div class="choose_day">Sunday</div>
+        <div class="clear"></div>
+      </div>
       <img src="pills.png" style="width:700px;height:210px;"> </src>
 
       <div class="cubes_wrapper">
@@ -304,8 +314,8 @@
     </div>
 
       <div class="shedule_footer">
-        <a href=""><div class="print">Print this page</div></a>
-        <a href=""><div class="send_to_emergency">Send this information to emergency contact</div></a>
+        <a href="javascript:void(0)" onclick="window.print();"><div class="print">Print this page</div></a>
+        <a href="javascript:void(0)" onclick="window.open('mailto:emergency@42.us.org?subject=schedule&body=body');"><div class="send_to_emergency">Send this information to emergency contact</div></a>
       </div>
     </div>
 
