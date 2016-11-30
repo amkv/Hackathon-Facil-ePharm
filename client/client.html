@@ -3,14 +3,21 @@
 	<style>
 	body
 	{
-		background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/03/Wooden-Background-For-Free-Download.jpg");
-		font-family: "Lato", sans-serif;
+		background-image: url("wooden-background.jpg");
+		font-family: Arial, Helvetica, sans-serif;
 		margin-left: 0;
 		margin-right: 0;
 	}
+	img
+	{
+		z-index: 2;
+		position: fixed;
+		top: 30px;
+		right: 10px;
+	}
 	h1
 	{
-		background-image: url("http://www.snapsglobal.com/wp-content/uploads/2016/01/desktop-wallpaper-beautiful-wallpapers-cool-wallpapers-desktop-backgrounds-computer-backgrounds-free-backgrounds-32.jpg");
+		background-image: url("tree-banner.jpg");
 		background-position: 45% 70%;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 		width: 100%;
@@ -19,31 +26,37 @@
 		text-align: left;
 		font-size: ;
 	}
+	.section
+	{
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
 	.title
 	{
 		text-decoration: none;
 		color: black;
-		text-shadow: 0 1.5px 1.5px #FFFFFF;
+		text-shadow: 0 2px 1px #FAF0E6;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
-	.section
+	.prescriptions .ready
 	{
-		border: 1px solid #ccc;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-	.prescriptions
-	{
-		background-color: #00FF7F;
-		opacity: .75;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: white;
+		color: green;
+		opacity: .95;
 		border-radius: 5px;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
-		margin-right: 10px;
-		margin-left: 10px;
 	}
 	ul.ready
 	{
-		background-color: #00FF7F;
-		opacity: .9;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: #AED581;
+		opacity: .95;
+		border-radius: 5px;
+		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
 	.rxinfo
 	{
@@ -51,27 +64,30 @@
 	}
 	div.pending
 	{
+		margin-left: 20px;
+		margin-right: 20px;
+		border-radius: 5px;
 		background-color: white;
+		opacity: .95;
+		border-radius: 5px;
+		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
 	li.ready
 	{
 		font-weight: bold;
-		color: #006400;
+		color: #003300;
 	}
 	ul li.nostyle {list-style-type: none;}
 	ul li a {text-decoration: none;}
 
 	ul.tab
 	{
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		display: inline-block;
 		width: 100%;
+		margin-right: 200px;
+		display: inline-block;
 		text-align: center;
-		background-color: #f1f1f1;
-		opacity:;
-		border-radius: 5px;
+		background-color: darkgrey;
+		text-shadow: 0 .5px .5px white;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
 	ul.tab li {float: left;}
@@ -79,7 +95,7 @@
 		display: inline-block;
 		color: black;
 		text-align: center;
-		padding: 14px 25px;
+		padding: 30px;
 		transition: 0.3s;
 		font-size: 17px;
 		border-radius: 5px;
@@ -88,7 +104,7 @@
 	ul.tab li a:hover {background-color: #E0FFFF;}
 	ul.tab li a.otherday:focus
 	{
-		background-color: #CD5C5C;
+		background-color: #778899;
 		opacity: .9;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
@@ -96,11 +112,13 @@
 	{
 		text-transform: uppercase;
 		font-weight: bold;
-		background-color: #00FF7F;
+		background-color: #AED581;
 		box-shadow: 0 5px 5px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
 	.tabcontent
 	{
+		margin-left: 20px;
+		margin-right: 20px;
 	    display: none;
 		padding: 6px 12px;
 		border-top: none;
@@ -115,7 +133,8 @@
 		background-color: #f1f1f1;
 		border-radius: 10px;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
-		opacity: 1;
+		opacity: .95;
+		width: 100%;
 	}
 	.am
 	{
@@ -129,6 +148,8 @@
 	}
 	.num
 	{
+		padding-left: 50px;
+		padding-right: 50px;
 		color: black;
 	}
 	ul.schedule li a.am
@@ -150,41 +171,71 @@
 	}
 	.pills
 	{
-		background-color: white;
-		opacity: .85;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: #AED581;
+		opacity: .95;
 		border-radius: 5px;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
 	}
 	.medinfo
 	{
+		margin-left: 20px;
+		margin-right: 20px;
 		display: none;
 		border-radius: 5px;
 		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
-		background-color: #FA8072;
+		background-color: white;
 		padding: 6px 12px;
 		opacity: .9;
 	}
+	.even
+	{
+		background-color: white;
+	}
+	div.logout
+	{
+		float: right;
+		margin-left: 20px;
+		margin-right: 20px;
+		opacity: .85;
+		width: 10%;
+		background-color: black;
+		text-decoration-color: white;
+		text-align: center;
+		border-radius: 5px;
+		box-shadow: 0 4px 4px 0 rgba(0,0,0,0.32),0 2px 10px 0 rgba(0,0,0,0.24);
+	}
+	a.logout
+	{
+		color: white;
+	}
+	.padding
+	{
+		padding-top: 15px;
+	}
 	</style>
 
-<body onload="openToday()">
+<body>
 
-<h1> WELCOME MAX BENNETT!</h1>
+<img src="logo.svg" width="50px" height="50px">
+<h1> WELCOME, JOHN SMITH!</h1>
 
 <div>
 <h2><a href="javascript:void(0)" class="title toggle" onclick="toggle(event, 'rxinfo', '')">PENDING PRESCRIPTIONS:</a></h2>
-	<ul class="pills ready">
-	<p>You have 1 refill ready to pick up and 1 new prescription pending:</p>
+	<ul class="pills ready section">
+	<p><i>You have 1 refill ready to pick up and 1 new prescription pending:</i></p>
 		<li class="rxlinks ready">Atorvastatin (50 mg)	
-			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_atorvastatin', 'rxinfo', 'rxlinks')">	info</a>
+			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_atorvastatin', 'rxinfo', 'rxlinks')">	details</a>
 		</li>
 		<li class="rxlinks pending">Sildenafil (50 mg)	
-			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_sildenafil', 'rxinfo', 'rxlinks')">	info</a>
+			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_sildenafil', 'rxinfo', 'rxlinks')">	details</a>
 		</li>
 	</ul>
 </div>
 
 <div class="prescriptions">
-	<div id="rx_atorvastatin" name="rx_atorvastatin" class="rxinfo ready">
+	<div id="rx_atorvastatin" name="rx_atorvastatin" class="rxinfo ready section">
 		<ul>
 			<li class="nostyle"><b>Atorvastatin (ready)</b></li>
 			<li class="nostyle">Reason: High Cholesterol</li>
@@ -202,7 +253,7 @@
 				</ul>
 		</ul>
 	</div>
-	<div id="rx_sildenafil" name="rx_sildenafil" class="rxinfo pending">
+	<div id="rx_sildenafil" name="rx_sildenafil" class="rxinfo pending section">
 		<ul>
 			<li class="nostyle"><b>Sildenafil (pending)</b></li>
 			<li class="nostyle">Reason: Erectile disfunction</li>
@@ -237,63 +288,34 @@
 	<div id="0" class="tabcontent">
 		<h3 class="title">Sunday</h3>
 		<ul class="SunTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td></td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -302,63 +324,34 @@
 	<div id="1" class="tabcontent">
 		<h3 class="title">Monday</h3>
 		<ul class="MonTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -367,63 +360,34 @@
 	<div id="2" class="tabcontent">
 		<h3 class="title">Tuesday</h3>
 		<ul class="TuesTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> <a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> <a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -432,63 +396,34 @@
 	<div id="3" class="tabcontent">
 		<h3 class="title">Wednesday</h3>
 		<ul class="WedTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a>v</td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -497,63 +432,34 @@
 	<div id="4" class="tabcontent">
 		<h3 class="title">Thursday</h3>
 		<ul class="ThursTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -562,63 +468,34 @@
 	<div id="5" class="tabcontent">
 		<h3 class="title">Friday</h3>
 		<ul class="FriTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -627,63 +504,35 @@
 	<div id="6" class="tabcontent">
 		<h3 class="title">Saturday</h3>
 		<ul class="SatTab schedule">
-		<div class="am">
-		<li><a href="javascript:void(0)" class="am">AM</a>
-			<table class="am">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
-		<div class="pm">
-		<li><a href="javascript:void(0)" class="pm">PM</a>
-			<table class="pm">
-			<tr><td><a href="javascript:void(0)" class="num 12">12:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 12">12:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 1">1:30</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 2">2:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 3">3:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 4">4:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 5">5:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 6">6:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 7">7:30</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:00</a></td><td></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 8">8:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 9">9:30</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 10">10:30</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:00</a></td><td> </td></tr>
-			<tr><td><a href="javascript:void(0)" class="num 11">11:30</a></td><td> </td></tr>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
 			</table>
 		</li>
 		</div>
@@ -692,8 +541,8 @@
 </div>
 
 <div>
-<h2><a href="#pills" class="title toggle" onclick="toggle(event, 'medlinks', 'medinfo')">MEDICATIONS:</a></h2>
-<ul id= "pills" class="pills">
+<h2><a href="#pills" class="title toggle" onclick="toggle(event, 'medlinks', 'medinfo')">CURRENT MEDICATIONS:</a></h2>
+<ul id= "pills" class="pills section">
 	<li class="nostyle"><a href="#atorvastain" class="medlinks" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></li>
 	<li class="nostyle"><a href="#metoprololsuccinate" class="medlinks" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></li>
 	<li class="nostyle"><a href="#aspirin" class="medlinks" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></li>
@@ -703,7 +552,7 @@
 </div>
 
 <div class="medications">
-	<div id="atorvastain" name="atorvastain" class="medinfo">
+	<div id="atorvastain" name="atorvastain" class="medinfo section">
 		<ul>
 			<li class="nostyle"><b>Atorvastain</b></li>
 			<li class="nostyle">Reason: ...</li>
@@ -721,7 +570,7 @@
 				</ul>
 		</ul>
 	</div>
-	<div id="metoprololsuccinate" name="metoprololsuccinate" class="medinfo">
+	<div id="metoprololsuccinate" name="metoprololsuccinate" class="medinfo section">
 		<ul>
 			<li class="nostyle"><b>Metoprolol succinate</b></li>
 			<li class="nostyle">Reason: ...</li>
@@ -738,7 +587,7 @@
 				</ul>
 		</ul>
 	</div>
-	<div id="aspirin" name="aspirin" class="medinfo">
+	<div id="aspirin" name="aspirin" class="medinfo section">
 		<ul>
 			<li class="nostyle"><b>Aspirin</b></li>
 			<li class="nostyle">Reason: ...</li>
@@ -755,7 +604,7 @@
 				</ul>
 		</ul>
 	</div>
-	<div id="clopidogrel" name="clopidogrel" class="medinfo">
+	<div id="clopidogrel" name="clopidogrel" class="medinfo section">
 		<ul>
 			<li class="nostyle"><b>Clopidogrel</b></li>
 			<li class="nostyle">Reason: ...</li>
@@ -772,7 +621,7 @@
 				</ul>
 		</ul>
 	</div>
-	<div id="hydrochlorothiazide" name="hydrochlorothiazide" class="medinfo">
+	<div id="hydrochlorothiazide" name="hydrochlorothiazide" class="medinfo section">
 		<ul>
 			<li class="nostyle"><b>Hydrochlorothiazide</b></li>
 			<li class="nostyle">Reason: ...</li>
@@ -790,6 +639,12 @@
 		</ul>
 	</div>
 	</div>
+</div>
+
+<div class="padding">
+<div class="logout section">
+	<a href="../index.html" class="logout">Logout</a>
+</div>
 </div>
 
 <script>
