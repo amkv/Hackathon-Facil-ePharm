@@ -97,6 +97,11 @@ body {
     padding-right: 10px;
 }
 
+.set_time:hover {
+	background: dimgrey;
+    color: white;
+}
+
 .exit {
     padding: 10px;
     float: right;
@@ -104,31 +109,39 @@ body {
     border-radius: 10px;
 }
 
+.exit:hover {
+	background: #615959;
+	color: white;
+}
+
 .clear {
 	clear: both;
 }
 
  .tab_but {
-	padding: 10px;
+    padding: 10px;
     float: left;
-    border: 1px solid black;
-    margin-right: 2px;
+    border: 1px solid #615959;
+    margin-right: 5px;
     border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+ }
+
+ .tab_but:hover {
+ 	 background: #e2e1e1;
  }
 
 .order {
-    float: left;
+	float: left;
     font-size: x-large;
     font-weight: 600;
-    border: 1px solid #615959;
     padding: 5px;
     border-radius: 10px;
-    background: #e6e5e5;
     color: #615959;
     margin-bottom: 5px;
     margin-right: 15px;
     padding-right: 15px;
-    padding-left: 15px;
 }
 
 .choose_day {
@@ -137,6 +150,10 @@ body {
     margin-right: -1px;
     border: 1px solid #615959;
     margin-bottom: 20px;
+}
+
+.choose_day:hover {
+	background: #e2e1e1;
 }
 
 .cubes_wrapper {
@@ -149,6 +166,10 @@ body {
     float: left;
     margin-left: -1px;
     margin-top: -1px;
+}
+
+.cubes:hover {
+	background: dimgrey;
 }
 
 .cubes_select {
@@ -168,6 +189,7 @@ body {
     border-radius: 10px;
     float: left;
     height: 35px;
+    text-align: center;
 }
 
 .one_day {
@@ -175,7 +197,7 @@ body {
 }
 
 .print {
-    padding: 10px;
+	padding: 10px;
     border: 1px solid black;
     width: 200px;
     margin-top: 30px;
@@ -183,6 +205,7 @@ body {
     float: left;
     margin-right: 10px;
     height: 35px;
+    text-align: center;
 }
 
 .shedule_footer {
@@ -190,7 +213,37 @@ body {
 }
 
 .pharma_comment {
-	padding: 10px;
+	padding: 5px;
+	width:695px;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.text_decor {
+	text-decoration: none;
+}
+
+.pharma_comment:hover {
+    background: #eae5e5;
+}
+
+.pharma_add_comment {
+	padding: 5px;
+    width: 90px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid #615959;
+    text-decoration: none;
+}
+
+a.pharma_add_comment {
+	text-decoration: none;
+}
+
+.pharma_add_comment:hover {
+    background: #615959;
+    color: white;
 }
 
 .day_name {
@@ -227,11 +280,10 @@ li.big_li {
 
 /* Style the list */
 div.tab {
-    list-style-type: none;
+	list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f1f1f1;
 }
 
 /* Float the list items side by side */
