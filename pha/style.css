@@ -282,6 +282,30 @@ li.big_li {
     padding-bottom: 5px;
 }
 
+.loginpage {
+    margin: 0 auto;
+    border: 1px solid dimgrey;
+    display: table;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.person {
+    padding: 10px;
+    border: 1px solid #615959;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.person:hover {
+    background: red;
+    background: dimgrey;
+    color: white;
+}
+
 
 /* Style the list */
 div.tab {
